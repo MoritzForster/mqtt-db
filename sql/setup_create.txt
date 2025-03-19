@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS telemetry (
+ timestamp TIMESTAMP NOT NULL, 
+ deviceid VARCHAR(50) NOT NULL,
+ metric VARCHAR(50) NOT NULL,
+ value VARCHAR(50),
+ PRIMARY KEY (timestamp, deviceid, metric)
+);
